@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2rem;
+  border-radius: 8px 8px 0 0;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2rem;
+  border-radius: 0 0 8px 8px;
+}
+.btn {
+  padding: 0.5rem 0.8rem;
+  font-size: 15px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  margin: 1rem 0;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+ @media screen and (min-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  .sedans {
+    border-radius: 8px 0 0px 8px;
+  }
+  .luxury {
+    border-radius: 0px 8px 8px 0px;
+  }
+} 
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem;
+    width: 760px;
+    height: 440px;
+    
+  
+    
+  }
+  
+  .sedans {
+    border-radius: 8px 0 0px 8px;
+  }
+  .luxury {
+    border-radius: 0px 8px 8px 0px;
+  }
+} 

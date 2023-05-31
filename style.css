@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
 }
-main {
+main{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.contenedor {
   display: flex;
   flex-direction: column;
   margin: 3rem 1rem;
@@ -20,6 +26,7 @@ main {
   background-color: hsl(179, 100%, 13%);
   padding: 2rem;
   border-radius: 0 0 8px 8px;
+
 }
 .btn {
   padding: 0.5rem 0.8rem;
@@ -31,11 +38,26 @@ main {
 .btn-sedans {
   color: hsl(31, 77%, 52%);
 }
+.btn-sedans:hover{
+  border-style: solid;
+  background-color:hsl(31, 77%, 52%);
+  color: white;
+}
 .btn-suvs {
   color: hsl(184, 100%, 22%);
 }
+.btn-suvs:hover{
+  border-style: solid;
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
 .btn-luxury {
   color: hsl(179, 100%, 13%);
+}
+.btn-luxury:hover {
+  border-style: solid;
+  color: white;
+  background-color: hsl(179, 100%, 13%);
 }
 h2 {
   font-family: "Big Shoulders Display", cursive;
@@ -49,37 +71,31 @@ p {
   margin-bottom: 1rem;
   color: hsla(0, 0%, 100%, 0.75);
 }
- @media screen and (min-width: 750px) {
-  main {
+ @media screen and (min-width: 768px) {
+  .contenedor {
     display: flex;
     flex-direction: row;
+    height: 380px;
   }
   .sedans {
     border-radius: 8px 0 0px 8px;
   }
   .luxury {
     border-radius: 0px 8px 8px 0px;
+  }
+  .btn{
+    margin-top: 30px;
   }
 } 
 
-@media screen and (min-width: 1000px) {
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 1rem;
-    width: 760px;
-    height: 440px;
-    
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    max-width: 750px;
+    max-height: 450px;
+  
+
   
     
   }
   
-  .sedans {
-    border-radius: 8px 0 0px 8px;
-  }
-  .luxury {
-    border-radius: 0px 8px 8px 0px;
-  }
 } 
